@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PitStop - Шиномонтаж и хранение шин</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>PitStop</h1>
+      <p class="tagline">Профессиональный шиномонтаж и хранение шин</p>
+    </div>
+  </header>
+
+  <nav>
+    <button class="burger-menu" aria-label="Открыть меню">
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
+    <ul>
+      <li><a href="./indexx.html">Главная</a></li>
+      <li><a href="./index1.html">Услуги</a></li>
+      <li><a href="./index3.html">О нас</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="filters-section">
+      <div class="container">
+        <h2>Подбор шин</h2>
+        <div class="filters">
+          <div class="filter-group">
+            <label for="season">Сезон:</label>
+            <select id="season" name="season">
+              <option value="">Все</option>
+              <option value="лето">Лето</option>
+              <option value="зима">Зима</option>
+              <option value="всесезонные">Всесезонные</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="size">Размер:</label>
+            <input type="text" id="size" name="size" placeholder="Пример: 195/65R15">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tires-section">
+      <div class="container">
+        <h2>Доступные шины</h2>
+        <div id="tires-container">
+          <!-- Здесь будут отображаться шины -->
+        </div>
+      </div>
+    </section>
+    <section class="pricing-section">
+      <div class="container">
+        <h2>Цены на хранение шин</h2>
+        
+        <div class="price-cards">
+          <div class="price-card">
+            <h3>Стандарт</h3>
+            <div class="price">1500₽/мес</div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Хранение на стеллажах</li>
+              <li><i class="fas fa-check"></i> Контроль климата</li>
+              <li><i class="fas fa-check"></i> Регулярный осмотр</li>
+            </ul>
+            <button class="btn">Заказать</button>
+          </div>
+
+          <div class="price-card popular">
+            <h3>Премиум</h3>
+            <div class="price">2500₽/мес</div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Индивидуальные ячейки</li>
+              <li><i class="fas fa-check"></i> VIP-обслуживание</li>
+              <li><i class="fas fa-check"></i> Бесплатная доставка</li>
+            </ul>
+            <button class="btn">Заказать</button>
+          </div>
+
+          <div class="price-card">
+            <h3>Эконом</h3>
+            <div class="price">900₽/мес</div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Общее хранилище</li>
+              <li><i class="fas fa-check"></i> Базовый уход</li>
+              <li><i class="fas fa-check"></i> Страховка</li>
+            </ul>
+            <button class="btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands-section">
+      <div class="container">
+        <h2>Шины в наличии по маркам</h2>
+        <div class="brands-list">
+
+          <div class="brand-item">
+            <div class="brand-header">
+              <h3>BMW</h3>
+              <img src="./image logo/bmw-logo-svgrepo-com.svg" alt="BMW" class="brand-logo">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="tires-list">
+              <div class="tire">
+                <span>Шины Michelin Alpin 6</span>
+                <span>225/55R17</span>
+                <span>12 шт.</span>
+                <span>23 930₽</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-item">
+            <div class="brand-header">
+              <h3>Mercedes-Benz</h3>
+              <img src="./image logo/mercedes-benz-9-logo-svgrepo-com.svg" alt="Mercedes" class="brand-logo">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="tires-list">
+              <div class="tire">
+                <span>Pirelli P Zero</span>
+                <span>255/40 R19 100Y</span>
+                <span>12 шт.</span>
+              </div>
+            </div>
+          </div>
+          <div class="brand-item">
+            <div class="brand-header">
+              <h3>Lada</h3>
+              <img src="./image logo/lada-svgrepo-com.svg" alt="Mercedes" class="brand-logo">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="tires-list">
+              <div class="tire">
+                <span>Pirelli P Zero</span>
+                <span>255/40 R19 100Y</span>
+                <span>12 шт.</span>
+              </div>
+            </div>
+          </div>
+          <div class="brand-item">
+            <div class="brand-header">
+              <h3>Audi</h3>
+              <img src="./image logo/audi-svgrepo-com.svg" alt="Mercedes" class="brand-logo">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="tires-list">
+              <div class="tire">
+                <span>Pirelli P Zero</span>
+                <span>255/40 R19 100Y</span>
+                <span>12 шт.</span>
+              </div>
+            </div>
+          </div>
+          <!-- Остальные марки -->
+          <div class="brand-item">
+            <div class="brand-header">
+              <h3>Lamborgini</h3>
+              <img src="./image logo/Логотип-LAMBORGHINI-280x280.jpg" alt="Mercedes" class="brand-logo">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="tires-list">
+              <div class="tire">
+                <span>Pirelli P Zero</span>
+                <span>255/40 R19 100Y</span>
+                <span>12 шт.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>PitStop</h3>
+          <p>Профессиональный сервис шиномонтажа и хранения шин</p>
+        </div>
+        <div class="footer-contacts">
+          <p>Телефон: +7 (123) 456-78-90</p>
+          <p>Адрес: г. Город, ул. Автомобильная, 1</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 PitStop. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Обработчик кликов для выпадающих списков
+    document.querySelectorAll('.brand-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const parent = header.parentElement;
+        const list = parent.querySelector('.tires-list');
+        const icon = header.querySelector('i');
+        
+        parent.classList.toggle('active');
+        list.style.maxHeight = parent.classList.contains('active') 
+          ? list.scrollHeight + "px" 
+          : "0";
+        
+        icon.style.transform = parent.classList.contains('active') 
+          ? 'rotate(180deg)' 
+          : 'rotate(0)';
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
